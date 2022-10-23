@@ -40,12 +40,12 @@ class ImapListener extends Command
 
         $cm = new ClientManager($options = []);
         $client = $cm->make([
-            'host' => 'mail.codecamp.ge',
-            'port' => 993,
-            'encryption' => 'ssl',
-            'validate_cert' => true,
-            'username' => 'test@codecamp.ge',
-            'password' => 'Dark1998',
+            'host' => env('IMAP_HOST'),
+            'port' => env('IMAP_PORT'),
+            'encryption' => env('IMAP_ENCRYPTION'),
+            'validate_cert' => env('IMAP_VALIDATE_CERT'),
+            'username' => env('IMAP_USERNAME'),
+            'password' => env('IMAP_PASSWORD'),
             'protocol' => 'imap'
         ]);
 

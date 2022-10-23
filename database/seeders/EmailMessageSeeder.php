@@ -16,13 +16,7 @@ class EmailMessageSeeder extends Seeder
     public function run()
     {
         EmailMessage::create([
-            'body' => 'new testing',
-            'from' => '1',
-            'to' => '2',
-            'was_replied' => 0,
-        ]);
-        EmailMessage::create([
-            'body' => 'new rame test testing',
+            'body' => 'Hello Dear John Doe',
             'from' => '1',
             'to' => '2',
             'was_replied' => 0,
